@@ -1,0 +1,180 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    box-sizing: border-box;
+}
+
+#all, #right, #para-div, #left, #price-div, #button-div {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#all, #right, #para-div {
+    flex-direction: column;
+}
+
+#perfume, #description, #small-price {
+    color: hsl(228, 12%, 48%);
+}
+
+#perfume, #description, #small-price, #button {
+    font-size: 1rem;
+}
+
+#big-price, #heading {
+    font-size: 2.2rem;
+    font-family: 'Fraunces', serif;
+}
+
+#perfume, #heading {
+    margin-bottom:4%;
+}
+
+#description, #price-div {
+    margin-bottom: 5%;
+}
+
+#button, img {
+    width: 100%;
+}
+
+#left{
+    padding: 7% 4% 0% 4%;
+}
+
+img {
+    border-radius: 5% 5% 0 0;
+}
+
+#right{
+    margin: 0% 4% 0 4%;
+    background-color: white;
+    border-radius: 0% 0% 5% 5%;
+}
+
+#para-div{
+    padding: 7% 7% 0 7%;
+}
+
+#heading{
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+
+#price-div {
+    flex-direction: row;
+    padding: 0% 7% 0% 7%;
+}
+
+#big-price {
+    color:  hsl(158, 36%, 37%);
+}
+
+#small{
+    align-self: center;
+    margin-left: 8%;
+}
+#small-price {
+    text-decoration-line: line-through; 
+}
+
+#button-div {
+    position: relative;
+    padding: 0 7% 0 7%;
+    margin-bottom: 7%;
+}
+
+#button {
+    padding: 5% 5% 5% 5%;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    background-color:  hsl(158, 36%, 37%);
+}
+
+#button-div img{
+    position: absolute;
+    width: 4%;
+    height: 30%;
+    left: 32%;
+    top: 35%;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+@media (min-width:576px){
+    #all {
+        flex-direction: row;
+        max-width: 1024px;
+        max-height: 768px;
+        position: absolute;
+        margin:auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    #left, #right {
+        width: 50%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #left img {
+        width: 100%;
+        height: 100%;
+        content: url(./images/image-product-desktop.jpg);
+        border-radius: 2% 0% 0 2%;
+    }
+
+    #right{
+        border-radius: 0% 2% 2% 0%;
+        height: 100%;
+    }
+
+    #perfume, #description, #small-price, #button {
+        font-size: 2rem;
+    }
+
+    #big-price, #heading {
+        font-size: 4.4rem;
+    }
+
+    #perfume, #heading, #description, #price-div {
+        margin-bottom: 8%;
+    }
+
+    #para-div{
+        padding: 8% 8% 0 8%;
+    }
+
+    #price-div {
+        padding: 0% 8% 0% 8%;
+    }
+
+    #button-div {
+        padding: 0 8% 0 8%;
+        margin-bottom: 8%;
+    }
+
+    #button-div img{
+        position: absolute;
+        width: 4%;
+        height: 30%;
+        left: 28%;
+        top: 35%;
+    }
+
+}
